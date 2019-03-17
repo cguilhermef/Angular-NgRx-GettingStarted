@@ -37,12 +37,12 @@ export class Load implements Action {
 
 export class LoadFail implements Action {
   readonly type = ProductActionTypes.LoadFail;
-  constructor(payload: string) { }
+  constructor(public payload: string) { }
 }
 
 export class LoadSuccess implements Action {
   readonly type = ProductActionTypes.LoadSuccess;
-  constructor(payload: Product[]) { }
+  constructor(public payload: Product[]) { }
 }
 
 export type ProductActions = ToggleProductCode
